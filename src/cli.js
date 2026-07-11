@@ -42,7 +42,7 @@ function helpText() {
 ${b("nuke-port")} ${d("— find and kill whatever is holding a port hostage")}
 
 ${b("USAGE")}
-  ${c("npx nuke-port")} <ports...> [options]
+  ${c("npx @hollyman/nuke-port")} <ports...> [options]
 
 ${b("PORTS")}
   3000                a single port
@@ -71,16 +71,16 @@ ${b("MODIFIERS")}
 
 ${b("EXAMPLES")}
   ${d("# The classic: free up port 3000")}
-  npx nuke-port 3000
+  npx @hollyman/nuke-port 3000
 
   ${d("# Nuke a whole dev stack at once")}
-  npx nuke-port 3000 5173 8080
+  npx @hollyman/nuke-port 3000 5173 8080
 
   ${d("# See what's on a port before killing it")}
-  npx nuke-port 3000 --list
+  npx @hollyman/nuke-port 3000 --list
 
   ${d("# What's listening on this machine?")}
-  npx nuke-port --scan
+  npx @hollyman/nuke-port --scan
 `;
 }
 

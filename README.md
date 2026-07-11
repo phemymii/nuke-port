@@ -12,7 +12,7 @@ A dev server crashed but left the port open, and now you're googling `lsof`
 flags again. `nuke-port` does it in one command:
 
 ```bash
-npx nuke-port 3000
+npx @hollyman/nuke-port 3000
 ```
 
 ```
@@ -33,23 +33,23 @@ Freed port(s): 3000
 
 ```bash
 # The classic: free up port 3000
-npx nuke-port 3000
+npx @hollyman/nuke-port 3000
 
 # Nuke a whole dev stack at once
-npx nuke-port 3000 5173 8080
+npx @hollyman/nuke-port 3000 5173 8080
 
 # A range of ports
-npx nuke-port 3000-3010
+npx @hollyman/nuke-port 3000-3010
 
 # Paste straight from a URL — the leading colon/host is fine
-npx nuke-port :3000
-npx nuke-port localhost:3000
+npx @hollyman/nuke-port :3000
+npx @hollyman/nuke-port localhost:3000
 ```
 
 Install it globally if you use it a lot:
 
 ```bash
-npm install -g nuke-port
+npm install -g @hollyman/nuke-port
 nuke-port 3000
 # `port-nuke` is provided as an alias too
 ```
@@ -94,7 +94,7 @@ nuke-port --interactive
 `nuke-port` is also a library. Everything is Promise-based.
 
 ```js
-import { find, getListeners, nuke, parsePorts } from "nuke-port";
+import { find, getListeners, nuke, parsePorts } from "@hollyman/nuke-port";
 
 // Who is on port 3000?
 const matches = await find(3000);

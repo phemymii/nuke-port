@@ -1,5 +1,5 @@
 {
-  "name": "nuke-port",
+  "name": "@hollyman/nuke-port",
   "version": "1.0.0",
   "description": "Cross-platform CLI + library to find and kill the process holding a port hostage. Fixes 'port already in use' on macOS, Windows and Linux.",
   "keywords": [
@@ -47,11 +47,14 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/phemymii/port-nuke.git"
+    "url": "git+https://github.com/phemymii/nuke-port.git"
   },
   "bugs": {
-    "url": "https://github.com/phemymii/port-nuke/issues"
+    "url": "https://github.com/phemymii/nuke-port/issues"
   },
-  "homepage": "https://github.com/phemymii/port-nuke#readme",
+  "homepage": "https://github.com/phemymii/nuke-port#readme",
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {}
 }

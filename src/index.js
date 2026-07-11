@@ -2,7 +2,7 @@
 //
 // Everything is Promise-based and free of side effects unless you call nuke().
 //
-//   import { find, getListeners, nuke, parsePorts } from "nuke-port";
+//   import { find, getListeners, nuke, parsePorts } from "@hollyman/nuke-port";
 //
 //   await find(3000);                 // who is on port 3000?
 //   await getListeners();             // every listening port
